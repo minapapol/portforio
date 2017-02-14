@@ -1,0 +1,9 @@
+.works-images {
+  /*position: relative;*/
+  width: 100%;
+}
+
+.works-images img {
+  /*position: absolute;*/
+  width: 100%;
+}

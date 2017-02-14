@@ -1,0 +1,26 @@
+body {
+  margin: 0px;
+}
+
+.topic {
+  text-align: center;
+  padding: 10px;
+}
+
+.sub-topic {
+  text-align: left;
+  padding-left: 20px;
+}
+
+#contact {
+  width: 100%;
+  height: 500px;
+  color: white;
+  background-color: black;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}

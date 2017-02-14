@@ -1,0 +1,131 @@
+.banner {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.banner img{
+  width: 100%;
+  height: 600px;
+  background-image: url('../images/ictBuilding.jpg');
+  background-size: 100% 100%;
+  position: absolute;
+  opacity: 0.8;
+  -webkit-filter: blur(10px) grayscale(1);
+  -moz-filter: blur(10px) grayscale(1);
+  -o-filter: blur(10px) grayscale(1);
+  -ms-filter: blur(10px) grayscale(1);
+  filter: blur(10px) grayscale(1);
+}
+
+.banner h1 {
+  color: white;
+  padding: 20px;
+  position: absolute;
+  bottom: 0px;
+  right: 10%;
+  text-shadow: 0 3px 0 rgba(255, 255, 255, 0.4);
+  z-index: 2;
+  -webkit-animation-name: myNameAnimatorLargeScreen; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: myNameAnimatorLargeScreen;
+  animation-duration: 2s;
+}
+
+#profile {
+  width: 600px;
+  height: 600px;
+  background-image: url('../images/profile.jpg');
+  background-size: 100%;
+  position: absolute;
+  bottom: 0px;
+  right:25%;
+  left: 50%;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-left:-250px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 99em;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  -webkit-animation-name: myProfileAnimator; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: myProfileAnimator;
+  animation-duration: 2s;
+}
+
+@media screen and (max-width:680px) {
+  .banner h1 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+    -webkit-animation-name: myNameAnimator; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: myNameAnimator;
+    animation-duration: 2s;
+  }
+
+  #profile {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: 0px;
+    right:25%;
+    left: 50%;
+    margin-left:-200px;
+  }
+
+  .banner {
+    height: 400px;
+    position: relative;
+  }
+
+  .banner img{
+    height: 400px;
+  }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myNameAnimator {
+    0%   {right:50px; opacity: 0;}
+    100% {right:0px; opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes myNameAnimator {
+    0%   {right:50px; opacity: 0;}
+    100% {right:0px; opacity: 1;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myNameAnimatorLargeScreen {
+    0%   {right:20%; opacity: 0;}
+    100% {right:10%; opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes myNameAnimatorLargeScreen {
+    0%   {right:20%; opacity: 0;}
+    100% {right:10%; opacity: 1;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myProfileAnimator {
+    0%   {left: 60%; opacity: 0;}
+    100% {left: 50%; opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes myProfileAnimator {
+    0%   {left: 60%; opacity: 0;}
+    100% {left: 50%; opacity: 1;}
+}

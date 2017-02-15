@@ -4,7 +4,7 @@ body {
 
 .topic {
   text-align: center;
-  padding: 10px;
+  padding: 50px;
 }
 
 .sub-topic {
@@ -12,19 +12,25 @@ body {
   padding-left: 20px;
 }
 
-.works-images {
-  /*position: relative;*/
+.work-images div a img {
   width: 100%;
+  padding: 10px;
 }
 
-.works-images img {
-  /*position: absolute;*/
+.work-images div a p {
+  text-align: center;
+  font-size: 15px;
+  font-style: oblique;
+}
+
+#skills  {
   width: 100%;
+  text-align: center;
+  background-color: rgba(100, 100, 100, 0.2);
 }
 
 #contact {
   width: 100%;
-  height: 600px;
   color: white;
   background-color: black;
 }
@@ -40,10 +46,11 @@ body {
   color: gray;
   text-align: center;
   background-color: black;
+  z-index: 1000;
 }
-
+/*
 @media screen and (max-width:992px) {
   #contact {
     height: 800px;
   }
-}
+}*/

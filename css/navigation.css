@@ -1,3 +1,9 @@
+#myTopnav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
 ul.topnav {
   list-style-type: none;
   margin: 0;

@@ -22,18 +22,18 @@ body {
 #map {
   width: 100%;
   height: 400px;
-  background-color: grey;
 }
 
-#contact #credit{
+#credit{
   width: 100%;
   padding: 50px;
   color: gray;
   text-align: center;
+  background-color: black;
 }
 
 @media screen and (max-width:680px) {
   #contact {
-    height: 1000px;
+    height: 800px;
   }
 }

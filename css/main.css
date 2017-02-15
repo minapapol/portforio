@@ -12,6 +12,16 @@ body {
   padding-left: 20px;
 }
 
+.works-images {
+  /*position: relative;*/
+  width: 100%;
+}
+
+.works-images img {
+  /*position: absolute;*/
+  width: 100%;
+}
+
 #contact {
   width: 100%;
   height: 600px;
@@ -32,7 +42,7 @@ body {
   background-color: black;
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:992px) {
   #contact {
     height: 800px;
   }
